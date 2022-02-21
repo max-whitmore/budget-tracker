@@ -1,3 +1,4 @@
+import "./styles/globals.css"
 import { Button, Stack } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import AddBudgetModal from "./components/AddBudgetModal"
@@ -8,6 +9,7 @@ import UncategorisedBudgetCard from "./components/UncategorisedBudgetCard"
 import TotalBudgetCard from "./components/TotalBudgetCard"
 import { useState } from "react"
 import { UNcategorised_BUDGET_ID, useBudgets } from "./contexts/BudgetsContext"
+import Header from "./components/Header"
 
 function App() {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false)
@@ -23,9 +25,11 @@ function App() {
 
   return (
     <>
-      <Container className="my-4">
+    <Header/>
+      <Container className="my-4 mb-5">
+      <p>To start, create a budget and then add an expense to the budget. </p>
         <Stack direction="horizontal" gap="2" className="mb-4">
-          <h1 className="me-auto">Budget tracker</h1>
+          
           <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}>
             Add Budget
           </Button>

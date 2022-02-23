@@ -1,4 +1,4 @@
-# Budget tracker app
+# Budget tracker app 💰💳
 
 Used to set and track budgets
 

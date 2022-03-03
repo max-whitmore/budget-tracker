@@ -1,10 +1,8 @@
 # Budget tracker app 💰💳
 
-Used to set and track budgets
+This is a simple React CRUD app that is built around budgeting. I built this project through online tutorials to help me learn React to learn about React Hooks, Contexts and custom components.
 
-I built this project through online tutorials to help me learn React.
-
-The app has the ability to:
+The <a href="https://budget-tracker-three.vercel.app/">app</a> has the ability to:
 - Add expenses
 - Remove exepenses
 - Categorise expenses
